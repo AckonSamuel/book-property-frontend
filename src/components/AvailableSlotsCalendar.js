@@ -29,7 +29,7 @@ export const AvailableSlotsCalendar = ({ userId, onSlotSelect, selectedSlot, tim
       };
       fetchSlots();
     }
-  }, [selectedDate, userId, selectedSlot?.date, timezone]);
+  }, [selectedDate, userId, selectedSlot, selectedSlot?.date, timezone]);
   
   const handleSlotSelect = (slot, date) => {
     onSlotSelect({ slotId: slot.id, date });

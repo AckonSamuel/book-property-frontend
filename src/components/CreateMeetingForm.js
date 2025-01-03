@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import {
   Paper, TextField, Button, Grid, FormControl,
-  InputLabel, Select, MenuItem
+  InputLabel, Select
 } from '@mui/material';
 import { API_CONFIG } from '../config/api';
 

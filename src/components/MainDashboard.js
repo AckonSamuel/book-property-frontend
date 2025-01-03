@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Grid, Box } from '@mui/material';
 import { MeetingsList } from './MeetingsList';
-import { CreateMeetingForm } from './CreateMeetingForm';
 import { AvailableSlotsCalendar } from './AvailableSlotsCalendar';
 import { UsersList } from './UsersList';
 
