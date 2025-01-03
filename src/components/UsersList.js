@@ -48,7 +48,8 @@ export const UsersList = ({ userId }) => {
           throw new Error(`Error: ${response.status}`);
         }
         const data = await response.json();
-        setUsers(data.users || []);
+        const filteredUsers = data.users.filter(user => user.user_id !== userId); setUsers(filteredUsers || []);
+        setUsers(filteredUsers || []);
       } catch (error) {
         console.error('Failed to fetch users:', error);
       }
@@ -128,6 +129,9 @@ export const UsersList = ({ userId }) => {
     <Paper className="p-6 bg-gray-100 shadow-md">
       <Typography variant="h6" className="text-gray-800 font-semibold mb-4">
         Available Users
+      </Typography>
+      <Typography variant="p" className="text-gray-800 font-semibold mb-4">
+        Click on the calender icon on each user to create a meeting
       </Typography>
       <List className="space-y-4">
         {users.map((user) => (
