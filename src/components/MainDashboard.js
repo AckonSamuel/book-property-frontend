@@ -57,7 +57,7 @@ const FjApartApartmentIntro = () => {
   return (
     <div className="w-full">
 
-      <Typography variant="h6" className="font-bold">
+      <Typography variant="h4" className="font-bold" sx={{ marginBottom: 4 }}>
         Fjord Apartments
       </Typography>
       <Typography variant="p" className="text-sm">
@@ -73,7 +73,9 @@ const FjApartApartmentIntro = () => {
                   readOnly
                   checked
                   className={`w-4 h-4 text-${checkbox.color}`}
-                  style={{ transform: 'scale(0.8)' }} />}
+                  style={{ transform: 'scale(0.8)' }} 
+                  sx={{ '&.Mui-checked': { color: '#CAA06E', }, '&.MuiCheckbox-root': { color: '#CAA06E', }, }}
+                  />}
                 label={<span className="text-sm text-${checkbox.color}">
                   {checkbox.label
                   }</span>} />))
@@ -89,7 +91,10 @@ const FjApartApartmentIntro = () => {
                   readOnly
                   checked
                   className={`w-4 h-4 text-${checkbox.color}`}
-                  style={{ transform: 'scale(0.8)' }} />}
+                  sx={{ '&.Mui-checked': { color: '#CAA06E', }, '&.MuiCheckbox-root': { color: '#CAA06E', }, }}
+                  style={{ transform: 'scale(0.8)' }} />
+                }
+                  
                 label={<span className="text-sm text-${checkbox.color}">
                   {checkbox.label
                   }</span>} />))
@@ -117,6 +122,7 @@ const BookingForm = () => (
           variant="outlined"
           label="Select Property"
           className="py-2"
+          sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#CAA06E', }, '&:hover fieldset': { borderColor: '#CAA06E', }, '&.Mui-focused fieldset': { borderColor: '#CAA06E', }, }, }}
         >
           <MenuItem value="Property 1">Property 1</MenuItem>
           <MenuItem value="Property 2">Property 2</MenuItem>
@@ -130,6 +136,7 @@ const BookingForm = () => (
           variant="outlined"
           label="Select Add-Ons"
           className="py-2"
+          sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#CAA06E', }, '&:hover fieldset': { borderColor: '#CAA06E', }, '&.Mui-focused fieldset': { borderColor: '#CAA06E', }, }, }}
         >
           <MenuItem value="Add-On 1">Add-On 1</MenuItem>
           <MenuItem value="Add-On 2">Add-On 2</MenuItem>
@@ -143,6 +150,7 @@ const BookingForm = () => (
           label="Number of Guests"
           type="number"
           className="py-2"
+          sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#CAA06E', }, '&:hover fieldset': { borderColor: '#CAA06E', }, '&.Mui-focused fieldset': { borderColor: '#CAA06E', }, }, }}
         />
       </Grid>
       <Grid item xs={12} md={6}>
@@ -152,6 +160,7 @@ const BookingForm = () => (
           variant="outlined"
           label="Include Kids?"
           className="py-2"
+          sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#CAA06E', }, '&:hover fieldset': { borderColor: '#CAA06E', }, '&.Mui-focused fieldset': { borderColor: '#CAA06E', }, }, }}
         >
           <MenuItem value="Yes">Yes</MenuItem>
           <MenuItem value="No">No</MenuItem>
@@ -167,6 +176,7 @@ const BookingForm = () => (
             shrink: true,
           }}
           className="py-2"
+          sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#CAA06E', }, '&:hover fieldset': { borderColor: '#CAA06E', }, '&.Mui-focused fieldset': { borderColor: '#CAA06E', }, }, }}
         />
       </Grid>
       <Grid item xs={12} md={6}>
@@ -179,6 +189,7 @@ const BookingForm = () => (
             shrink: true,
           }}
           className="py-2"
+          sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#CAA06E', }, '&:hover fieldset': { borderColor: '#CAA06E', }, '&.Mui-focused fieldset': { borderColor: '#CAA06E', }, }, }}
         />
       </Grid>
       <Grid item xs={12} md={6}>
@@ -188,6 +199,7 @@ const BookingForm = () => (
           label="Cost of Stay"
           type="number"
           className="py-2"
+          sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#CAA06E', }, '&:hover fieldset': { borderColor: '#CAA06E', }, '&.Mui-focused fieldset': { borderColor: '#CAA06E', }, }, }}
         />
       </Grid>
       <Grid item xs={12} md={6}>
@@ -197,6 +209,7 @@ const BookingForm = () => (
           label="Add-Ons Cost"
           type="number"
           className="py-2"
+          sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#CAA06E', }, '&:hover fieldset': { borderColor: '#CAA06E', }, '&.Mui-focused fieldset': { borderColor: '#CAA06E', }, }, }}
         />
       </Grid>
       <Grid item xs={12} md={6}>
@@ -207,7 +220,7 @@ const BookingForm = () => (
           multiline
           rows={1}
           className="py-2"
-        />
+          sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#CAA06E', }, '&:hover fieldset': { borderColor: '#CAA06E', }, '&.Mui-focused fieldset': { borderColor: '#CAA06E', }, }, }}/>
       </Grid>
       <Grid item xs={12} md={6}>
         <TextField
@@ -219,6 +232,7 @@ const BookingForm = () => (
           value={400}
           rows={1}
           className="py-2"
+          sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#CAA06E', }, '&:hover fieldset': { borderColor: '#CAA06E', }, '&.Mui-focused fieldset': { borderColor: '#CAA06E', }, }, }}
         />
       </Grid>
     </Grid>

@@ -38,19 +38,19 @@ const Review = () => {
         <FaChevronLeft />
       </button>
       <div className="flex space-x-4">
-        <article className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+        <article className="flex w-[250px] flex-col items-center bg-white p-4 rounded-lg shadow-md">
           <div className="w-12 h-12 rounded-full overflow-hidden mb-4">
             <img src={image1} alt={name1} className="w-full h-full object-cover" />
           </div>
           <span className="text-sm text-gray-600">
             <FaQuoteRight />
           </span>
-          <h4 className="text-sm font-bold">{name1}</h4>
-          <p className="text-sm text-gray-500">{job1}</p>
-          <Rating name="half-rating-read" defaultValue={5} precision={0.5} readOnly />
-          <p className="text-sm text-gray-700">{truncateText(text1)}</p>
+          <h4 className="text-xs font-bold">{name1}</h4>
+          <p className="text-xs text-gray-500">{job1}</p>
+          <Rating name="half-rating-read" defaultValue={5} precision={0.5} readOnly size="small" />
+          <p className="text-xs text-gray-700">{truncateText(text1)}</p>
         </article>
-        <article className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md">
+        <article className="flex w-[250px] flex-col items-center bg-white p-4 rounded-lg shadow-md">
           <div className="w-12 h-12 rounded-full overflow-hidden mb-4">
             <img src={image2} alt={name2} className="w-full h-full object-cover" />
           </div>
@@ -59,7 +59,7 @@ const Review = () => {
           </span>
           <h4 className="text-sm font-bold">{name2}</h4>
           <p className="text-sm text-gray-500">{job2}</p>
-          <Rating name="half-rating-read" defaultValue={5} precision={0.5} readOnly />
+          <Rating name="half-rating-read" defaultValue={5} precision={0.5} readOnly size="small" />
           <p className="text-sm text-gray-700">{truncateText(text2)}</p>
         </article>
       </div>
