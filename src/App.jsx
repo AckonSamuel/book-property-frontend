@@ -1,13 +1,13 @@
 import React from 'react';
 import Layout from './Layout';
 import './App.css';
-import { MainDashboard } from './components/MainDashboard';
+import BookingModal from './components/MainDashboard';
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        <MainDashboard />
+        <BookingModal />
       </Layout>
 
     </div>
